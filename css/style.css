@@ -16,8 +16,33 @@ body {
   letter-spacing: 2px;
 }
 
-#subtitle {
-  margin-top: 12px;
-  font-size: 16px;
-  opacity: 0.8;
+.message {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-style: italic;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.romantic {
+  margin-top: 24px;
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease 0.5s, transform 1s ease 0.5s;
+  max-width: 80%;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.romantic.show {
+  opacity: 1;
+  transform: translateY(0);
 }
